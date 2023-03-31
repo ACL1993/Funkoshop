@@ -5,28 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles2.css">
 
 </head>
-
-<header>
-<nav class="navbar">
-    <a href="#" class="logo">
-      <img src="./multimedia/branding/isotype.svg" alt="icono de FunkoShop">
-      FunkoShop
-    </a>
-    <div class="navbar-right">
-      <a href="#">Shop</a>
-      <a href="#">Contacto</a>
-      <a href="#">Login</a>
-      <a href="#">
-        <img src="./multimedia/icons/cart-icon.svg" alt="icono de carrito de compras">
-      </a>
-    </div>
-  </nav>
-</header>
-
 <body>
-    
-</body>
-</html>
+<header>
+  <div class="wrapper">
+    <div class="logo-container">
+    <img class="loguito" src="./multimedia/branding/isotype.svg" alt="loguito">
+    <div class="logo-text">FUNKOSHOP</div>
+    </div>
+    <nav>
+    <a href="#">SHOP</a>
+    <a href="#">CONTACTO</a>
+    <a href="#">LOGIN</a>
+    <a href="#"> <img src="./multimedia/icons/cart-icon.svg" alt="Imagen" ></a>
+    </nav>
+  </div>
+  </header>	 
+  <main>
+
+    <div class="search-panel">
+      <div class="search-bar">
+        <label for="search-input">Buscar:</label>
+        <p>
+        <input type="text" id="search-input" name="search" placeholder="Ingrese término de búsqueda...">
+      </div>
+      <div class="search-filters">
+        <div class="filter-group">
+          <label for="sort-by">Ordenar por:</label>
+          <p>
+          <select id="sort-by" name="sort-by">
+            <option value="relevance">Relevancia</option>
+            <option value="price-asc">Precio ascendente</option>
+            <option value="price-desc">Precio descendente</option>
+            <option value="date-desc">Fecha descendente</option>
+            <option value="date-asc">Fecha ascendente</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="price-range">Precio:</label>
+          <p>
+          <input type="number" id="price-min" name="price-min" placeholder="Mínimo" min="0">
+          <span>-</span> <input type="number" id="price-max" name="price-max" placeholder="Máximo" min="0">
+        </div>
+        <div class="filter-group">
+          <label for="options">Filtrar por:</label>
+          <div class="options">
+            <div class="option">
+              <input type="checkbox" id="new" name="new">
+              <label for="new">Nuevos</label>
+            </div>
+            <div class="option">
+              <input type="checkbox" id="on-sale" name="on-sale">
+              <label for="on-sale">Ofertas</label>
+            </div>
+            <div class="option">
+              <input type="checkbox" id="special-edition" name="special-edition">
+              <label for="special-edition">Edición especial</label>
+            </div>
+            <div class="option">
+              <input type="checkbox" id="favorites" name="favorites">
+              <label for="favorites">Favoritos</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+
+  <footer>
+		<div class="wrapper2">
+		  <div class="footer-left">
+			<nav>
+			  <ul>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Registrarse</a></li>
+				<li><a href="#">Ingresar</a></li>
+				<li><a href="#">Contacto</a></li>
+			  </ul>
+			</nav>
+		  </div>
+	  
+		  <div class="footer-right">
+			<div class="loguito2">
+			  <img src="./multimedia/branding/isotype.svg" alt="loguito" img>
+			</div>
+		  </div>
+	  
+		  <div class="terms">
+			<p>All rights reserved 2022 - Funkoshop &copy;</p>
+		  </div>
+		</div>
+	  </footer>
+  </body>
