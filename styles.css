@@ -8,6 +8,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 .logo-container {
@@ -164,6 +166,7 @@ body {
     flex: 1;
     text-align: center;
   }
+  
 .textotitulo {
   display: flex;
   justify-content: left;
@@ -200,6 +203,7 @@ body {
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+      font-family: 'Raleway', sans-serif;
     }
     
     .footer-left {
@@ -242,6 +246,7 @@ body {
     
       .terms {
         margin-top: 1rem;
+        font-family: 'Raleway', sans-serif;
       }
     }
     

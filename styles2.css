@@ -193,6 +193,25 @@ margin-top: 50px;   }
   border: 1px solid #fd0000;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-panel {
+  width: 20%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  align-self: flex-start; /* Añadido */
+}
+
+.product-grid {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
 
 @font-face {
   font-family: 'Raleway';
