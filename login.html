@@ -53,6 +53,26 @@
             </div>
           </div>
           
+          <script>
+            // Obtener el formulario y los campos de email y contraseña
+            const loginForm = document.getElementById('login-form');
+            const emailInput = document.getElementById('email');
+            const passwordInput = document.getElementById('password');
+          
+            // Agregar un manejador de eventos para el envío del formulario
+            loginForm.addEventListener('submit', function(event) {
+              event.preventDefault(); // Evitar el envío del formulario
+          
+              // Verificar si los campos están completos
+              if (emailInput.value.trim() === '' || passwordInput.value.trim() === '') {
+                alert('Por favor, complete todos los campos.');
+                return;
+              }
+          
+              // Si los campos están completos, continuar con el envío del formulario al servidor
+              loginForm.submit();
+            });
+          </script>
           
         </form>
       </div>      
