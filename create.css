@@ -51,6 +51,8 @@ header {
 
   .row {
     margin-bottom: 2%;
+    font-family: 'Raleway';
+
   }
 
   input[type="text"].form-control {
@@ -67,6 +69,11 @@ header {
     border-radius: 5px;
     border: 1px solid #ced4da;
     padding: 10px;
+  }
+
+  .btn-danger-white {
+    background-color: #FF0000;
+    color: #FFFFFF;
   }
   
 
